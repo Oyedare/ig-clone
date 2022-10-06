@@ -1,0 +1,50 @@
+@import"../Variables/Variables.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $greyColor;
+    color: $blackColor;
+    font-size: 16px;
+    // overflow-x: hidden;
+}
+.navbar{
+    // width: 100%;
+    background-color: $whiteColor;
+    border-bottom: 1px solid $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: .7rem 12.7rem .4rem;
+    .logo{
+        width: 12%;
+        img{
+            width: 100%;
+        }
+    }
+    .search-input{
+        // flex: 1;
+        input{
+            background: $searchBg;
+            border: 0;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: $blackColor;
+            font-size: 16px;
+            height: 100%;
+            outline: none;
+            padding: .7rem 1.5rem;
+            width: 20rem;
+            z-index: 2;
+        }
+    }
+    .icon-bars{
+        // flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+        cursor: pointer;
+    }
+}
